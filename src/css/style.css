@@ -1,0 +1,156 @@
+[data-widget=ticketDeck] {
+  background: center/contain url(../img/graph-paper.jpg);
+  display: flex;
+  flex-direction: column;
+  border: 1px solid gray;
+  border-radius: 5px;
+  position: relative;
+}
+
+.ticketList {
+  box-sizing: content-box;
+  margin: .5rem;
+  padding: 0;
+  border: 1px solid black;
+}
+
+.ticket {
+  list-style: none;
+  border: 1px solid black;
+}
+
+.ticketBody {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0.5rem;
+}
+
+.ticketDescr {
+  width: 70%;
+}
+.ticketDescrLong{
+  display: none;
+  padding: 1rem 3rem;
+}
+.ticketDescrLong.active{
+  display: block;
+}
+.ticketRest {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.ticketDate {
+  margin: 0 1rem;
+}
+.time{
+  margin-left: 1rem;
+}
+.selectTicketBtn,
+.editTicketBtn,
+.deleteTicketBtn {
+  width: 2rem;
+  height: 2rem;
+  border-radius: 50%;
+}
+
+.editTicketBtn,
+.deleteTicketBtn {
+  margin-left: 1rem;
+}
+.selectTicketBtn {
+  position: relative;
+}
+.selectTicketBtn.checked::before{
+  content: '';
+  position: absolute;
+  background-color: wheat;
+  background: center / contain no-repeat  url(../img/clipart2707339.png);
+  width: 25px;
+  height: 25px;
+  left: 0px;
+  top: 0px;
+  z-index: 10;
+  border-radius: 50%;
+}
+
+
+.input {
+  display: inline-block;
+  padding: .375rem .75rem;
+  font-size: 1rem;
+  line-height: 1.5;
+  color: #495057;
+  border: 1px solid #ced4da;
+  border-radius: .25rem;
+  outline: none;
+}
+
+.input.valid {
+  border: 1px solid green;
+}
+
+.input.error {
+  border: 1px solid red;
+}
+
+.btn {
+  display: inline-block;
+  text-align: center;
+  vertical-align: middle;
+  user-select: none;
+  padding: 1rem 1.5rem;
+  margin: 0.5rem;
+  font-size: 1rem;
+  line-height: 1.5;
+  border-radius: 1rem;
+  border: .5px solid #737577;
+}
+
+.addTicket, .addTicketButtons {
+  align-self: end; 
+}
+
+.form-control {
+  position: relative;
+  margin-bottom: 5px;
+}
+form.active{
+  display: flex;
+}
+form {
+  display: none;
+  position: absolute;
+  width: 500px;
+  flex-direction: column;
+  border: 1px solid gray;
+  border-radius: 15px;
+  background-color: white;
+  align-items: flex-start;
+  z-index: 100;
+  padding: 15px;
+  font-family: serif;
+  font-weight: 600;
+  font-size: 1.3rem;
+  left:30%;
+
+}
+form input {
+  width: 100%;
+  height: 35px;
+  box-sizing: border-box;
+}
+form > * {
+  margin-bottom: 10px;
+}
+.ticketDescription{
+  margin: 10px auto;
+  align-self: center; 
+}
+form textarea{
+  width: 100%;  
+  box-sizing: border-box;
+  resize: none;
+}

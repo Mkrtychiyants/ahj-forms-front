@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Document</title>
+  <script src="https://kit.fontawesome.com/78f0e13aaa.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+  <div data-widget="ticketDeck">
+
+    <button class="btn addTicket">Добавить тикет </button>
+
+    <ul class="ticketList">
+    </ul>
+     <form data-id="addTicket-form" novalidate>
+        <div class="ticketDescription">Добавить тикет</div>
+        <label for="shortDescr">Краткое описание</label>
+        <input type="text" name="shortDescr" id="shortDescr" required autofocus>
+        <label for="shortDescr">Подробное описание</label>
+        <textarea id="longDescr" name="longDescr" rows="4" cols="50" required>  
+        </textarea>
+        <div class="addTicketButtons">
+          <button class="btn cancel" type="reset">Отмена</button>
+          <button class="btn submit" type="submit">Ок</button>
+        </div>
+    </form>
+    <form data-id="changeTicket-form" novalidate>
+      <div class="ticketDescription">Изменить тикет</div>
+      <label for="shortDescr">Краткое описание</label>
+      <input type="text" name="shortDescr" id="shortDescr" required autofocus>
+      <label for="shortDescr">Подробное описание</label>
+      <textarea id="longDescr" name="longDescr" rows="4" cols="50">  
+      </textarea>
+      <div class="addTicketButtons">
+        <button class="btn cancel" type="reset">Отмена</button>
+        <button class="btn submit" type="submit">Ок</button>
+      </div>
+    </form>
+    <form data-id="deleteTicket-form" novalidate>
+      <div class="ticketDescription">Удалить тикет</div>
+      <div class="ticketDelete">Вы уверены, что хотите удалить тикет?
+      Это действие неотвратимо
+      </div>
+     
+      <div class="addTicketButtons">
+        <button class="btn cancel" type="reset">Отмена</button>
+        <button class="btn submit" type="submit">Ок</button>
+      </div>
+    </form>
+  </div>
+
+</body>
+
+</html>
